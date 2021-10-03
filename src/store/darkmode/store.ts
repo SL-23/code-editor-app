@@ -1,6 +1,7 @@
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 import { PAUSE, PURGE, REGISTER ,PERSIST,REHYDRATE,FLUSH  } from "redux-persist/es/constants";
-import persistedReducer from "./persistConfig";
+import persistStore from "redux-persist/es/persistStore";
+import persistedReducer from "../persistConfig";
 
 const ignoredActions = [FLUSH, REHYDRATE, PAUSE,PERSIST, PURGE, REGISTER];
 
