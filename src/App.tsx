@@ -1,8 +1,8 @@
+import Routes from "./route/Route";
+
 function App() {
   return (
-    <div className="App">
-      hello!!!World
-    </div>
+    <Routes/>
   );
 }
 
