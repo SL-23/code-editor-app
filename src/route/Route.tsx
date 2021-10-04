@@ -4,7 +4,8 @@ import { makeStyles } from "@material-ui/core";
 import { Redirect, Route, Switch } from "react-router-dom";
 import ProtectedRoute from "../auth/ProtectedRoute";
 import routes from "./routes";
-import Loading from "../components/common/Loading";
+import Loading from "../components/common/Loading/Loading";
+import Header from "../components/common/Header/Header";
 
 const Routes = () => {
   const { isAuthenticated, isLoading } = useAuth0();
@@ -14,12 +15,15 @@ const Routes = () => {
     return<Loading/>
   }
 
+  const codeEditor = () => <div>Code Editor App</div>
   return (
     <div className={classes.main}>
-      <div>Header</div>
+      <Header/>
       <div className={classes.page}>
         <Switch>
-          <ProtectedRoute path={routes.codeEditor} component={<div>code editor</div>}/>
+          <ProtectedRoute exact path={routes.codeEditor}>
+            {codeEditor}
+          </ProtectedRoute>
           <Route exact path={routes.home}>
             {
               isAuthenticated ? 
