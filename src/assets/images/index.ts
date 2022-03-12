@@ -1,0 +1,10 @@
+export { ReactComponent as BlankFileIcon } from "./blank-file.svg";
+export { ReactComponent as CSS3Icon } from "./css3-original.svg";
+export { ReactComponent as GoIcon } from "./go-original.svg";
+export { ReactComponent as JavaIcon } from "./java-original.svg";
+export { ReactComponent as Javascript } from "./javascript-original.svg";
+export { ReactComponent as PhpIcon } from "./php-original.svg";
+export { ReactComponent as PythonIcon } from "./python-original.svg";
+export { ReactComponent as ReactIcon } from "./react-original.svg";
+export { ReactComponent as RubyIcon } from "./ruby-original.svg";
+export { ReactComponent as TypescriptIcon } from "./typescript-original.svg";

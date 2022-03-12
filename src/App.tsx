@@ -1,8 +1,15 @@
-import Routes from "./route/Route";
+import AuthProvider from "auth/AuthProvider";
+import { BrowserRouter as Rounter } from "react-router-dom";
+import CustomThemeProvider from "theme/CustomThemeProvider";
+import Routes from "./route/routes";
 
 function App() {
   return (
-    <Routes/>
+   <AuthProvider>
+     <CustomThemeProvider>
+       <Routes/>
+      </CustomThemeProvider>
+   </AuthProvider>
   );
 }
 

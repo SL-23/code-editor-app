@@ -9,8 +9,6 @@ const AuthProvider = (props : PropsWithChildren<{}>) => {
     history.push(appState ?.returnTo || window.location.pathname);
   };
   
-  console.log(process.env);
-
   return (
     <Auth0Provider
       domain={appConfig.auth0Domain}

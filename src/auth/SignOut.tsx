@@ -1,7 +1,7 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import { Button, makeStyles } from "@material-ui/core";
 import React from "react";
-import { commonColors } from "../theme/color";
+import { commonColors } from "../theme/colors";
 
 const SignOut = () => {
   const { logout } = useAuth0();
@@ -20,7 +20,7 @@ const SignOut = () => {
 
 const useStyles = makeStyles(() => ({
   button: {
-    color: commonColors.black,
+    color: commonColors.black ,
   }
 }))
 

@@ -3,10 +3,17 @@ import React, { ComponentType, PropsWithChildren } from "react";
 import { Route } from "react-router";
 import Loading from "../components/common/Loading/Loading";
 
-const ProtectedRoute = (props : PropsWithChildren<{[key:string] : any}>) => {
-  const {children, ...args} = props;
-  return <Route component={withAuthenticationRequired(children as ComponentType, { onRedirecting : () => <Loading/>} )}
-    {...args}
+type ProtectedRouteProps = {
+  component: ComponentType;
+  [key: string] : any
+}
+
+const ProtectedRoute = ({ component, ...args} : ProtectedRouteProps) => {
+  <Route
+    component={withAuthenticationRequired(component, {
+      onRedirecting: () => <Loading/>
+    })}
+  {...args}
   />
 } 
 

@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import AuthProvider from './auth/AuthProvider';
 import { BrowserRouter as Router } from "react-router-dom";
-import ReduxProvider from './store/darkmode/ReducerProvider';
+import ReduxProvider from './store/slides/darkmode/ReducerProvider';
 import CustomThemeProvider from './theme/CustomThemeProvider';
 
 ReactDOM.render(

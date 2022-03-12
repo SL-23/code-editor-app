@@ -1,11 +1,20 @@
+import { makeStyles } from "@material-ui/core";
 import SignIn from "../../../auth/SignIn";
-const UnauthenticatedButton = () => {
- 
+
+const UnAuthenticatedButton = () => {
+  const classes = useStyles();
+
   return (
-    <div>
+    <div className={classes.root}>
       <SignIn/>
     </div>
     )
 }
 
-export default UnauthenticatedButton;
+const useStyles = makeStyles(() => ({
+  root: {
+    display: "flex"
+  }
+}))
+
+export default UnAuthenticatedButton;
