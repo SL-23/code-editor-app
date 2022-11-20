@@ -5,16 +5,16 @@ import Loading from "../components/common/Loading/Loading";
 
 type ProtectedRouteProps = {
   component: ComponentType;
-  [key: string] : any
+  [key: string]: any
 }
 
-const ProtectedRoute = ({ component, ...args} : ProtectedRouteProps) => {
+const ProtectedRoute = ({ component, ...args }: ProtectedRouteProps) =>
   <Route
     component={withAuthenticationRequired(component, {
-      onRedirecting: () => <Loading/>
+      onRedirecting: () => <Loading />
     })}
-  {...args}
+    {...args}
   />
-} 
+
 
 export default ProtectedRoute;

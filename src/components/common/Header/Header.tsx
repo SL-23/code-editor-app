@@ -21,12 +21,12 @@ const Header = () => {
         <Typography variant="h6" className={classes.title}>
           Code Editor App
         </Typography>
-        <DarkModeIcon/>
-        <Switch onChange={onChangeDarkMode} color="default" checked={darkMode}/>
-        { isAuthenticated ?  
-          <AuthenticatedButton/>
+        <DarkModeIcon />
+        <Switch onChange={onChangeDarkMode} color="default" checked={darkMode} />
+        {isAuthenticated ?
+          <AuthenticatedButton />
           :
-          <UnauthenticatedButton/>
+          <UnauthenticatedButton />
         }
       </Toolbar>
     </AppBar>)

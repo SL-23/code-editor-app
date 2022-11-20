@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
 import { styled } from "@mui/material/styles"
-import Header from "../Header/Header";
+import Header from "../header/Header";
 
 const LayoutContainer = styled("div")({
   height: "100%",
@@ -16,3 +16,6 @@ const Layout = (props: PropsWithChildren<{}>) =>
     <Header />
     <Page>{props.children}</Page>
   </LayoutContainer>
+
+
+export default Layout

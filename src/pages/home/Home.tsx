@@ -1,24 +1,26 @@
 import { makeStyles } from "@material-ui/core";
-import ProgrammingLanguageList from "../components/common/Home/ProgrammingLanguageList";
+import ProgrammingLanguageList from "./ProgrammingLanguageList";
 import { styled } from "@mui/material/styles"
+import Layout from "../../components/common/layout/Layout";
 const HomeContainer = styled('div')(({ theme }) => ({
   display: "flex",
-  flexDirection: "column"
-}))
-
-const WelcomeMessage = styled("div")(({ theme }) => ({
-  display: "flex",
   flexDirection: "column",
-  height: "100%",
   justifyContent: "center",
+  height: "100%",
   alignItems: "center",
   backgroundColor: theme.background
 }))
 
-const Home = () => <div>
+const WelcomeMessage = styled("div")(({ theme }) => ({
+  padding: "15px",
+  fontSize: "30px",
+  color: theme.font
+}))
+
+const Home = () => <Layout>
   <HomeContainer>
     <WelcomeMessage>Welcome!</WelcomeMessage>
     <ProgrammingLanguageList />
   </HomeContainer>
-</div>
+</Layout>
 export default Home;
