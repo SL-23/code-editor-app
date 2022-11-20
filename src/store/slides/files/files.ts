@@ -7,7 +7,7 @@ export interface FileState {
   editorActiveFileId: string | null;
 }
 
-export const initialState : FilesState = {
+export const initialState: FileState = {
   userFiles: [],
   activeFilesIds: [],
   editorActiveFileId: null
