@@ -1,5 +1,5 @@
 import Layout from "../../components/common/layout/Layout";
 
-const CodeEditor = () => <div>hi</div>
+const CodeEditor = () => <Layout>hi</Layout>
 
 export default CodeEditor

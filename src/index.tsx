@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import AuthProvider from './auth/AuthProvider';
 import { BrowserRouter as Router } from "react-router-dom";
-import ReduxProvider from './store/slides/darkmode/ReducerProvider';
+import StoreProvider from './store/StoreProvider';
 import CustomThemeProvider from './theme/CustomThemeProvider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ReduxProvider>
+    <StoreProvider>
       <Router>
         <AuthProvider>
           <CustomThemeProvider>
@@ -17,7 +17,7 @@ ReactDOM.render(
           </CustomThemeProvider>
         </AuthProvider>
       </Router>
-    </ReduxProvider>
+    </StoreProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
