@@ -1,14 +1,14 @@
 import { makeStyles } from "@material-ui/core";
 import SignIn from "../../../auth/SignIn";
 
-const UnAuthenticatedButton = () => {
+const UnauthenticatedButton = () => {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <SignIn/>
+      <SignIn />
     </div>
-    )
+  )
 }
 
 const useStyles = makeStyles(() => ({
@@ -17,4 +17,4 @@ const useStyles = makeStyles(() => ({
   }
 }))
 
-export default UnAuthenticatedButton;
+export default UnauthenticatedButton;

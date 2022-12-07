@@ -6,9 +6,9 @@ const AuthenticatedButton = () => {
 
   return (
     <div className={classes.root}>
-      <SignOut/>
+      <SignOut />
     </div>
-    )
+  )
 }
 
 const useStyles = makeStyles(() => ({
